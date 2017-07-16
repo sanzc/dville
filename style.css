@@ -1,0 +1,529 @@
+/*------------------------------
+------------ GENERAL -----------
+------------------------------*/
+
+@font-face {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v8/ATKpv8nLYAKUYexo8iqqrg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('PT Sans Bold'), local('PTSans-Bold'), url(https://fonts.gstatic.com/s/ptsans/v8/0XxGQsSc1g4rdRdjJKZrNPk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    font-style: italic;
+    font-weight: 400;
+    src: local('PT Sans Italic'), local('PTSans-Italic'), url(https://fonts.gstatic.com/s/ptsans/v8/PIPMHY90P7jtyjpXuZ2cLFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    font-style: italic;
+    font-weight: 700;
+    src: local('PT Sans Bold Italic'), local('PTSans-BoldItalic'), url(https://fonts.gstatic.com/s/ptsans/v8/lILlYDvubYemzYzN7GbLkOgdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+body {
+    background-color: #312f42;
+    font-family: 'PT Sans' !important;
+    font-size: 10pt;
+    line-height: normal;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+#main {
+    border: none;
+    width: auto;
+    padding: 0;
+    margin: 0;
+    background: #312F42;
+}
+
+a:link,
+a:active,
+a:visited {
+    text-shadow: none;
+    font-family: 'PT Sans' !important;
+    color: #fdff87;
+}
+
+input,
+select {
+    padding: 5px;
+    border: 0;
+    border-radius: 5px;
+    border: 1px solid #fff;
+}
+
+input[type="submit"] {
+    background: transparent;
+    border: 1px solid #fdff87;
+    color: #fdff87;
+    padding: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: #fdff87;
+    border: 1px solid #fdff87;
+    color: #312F42;
+    padding: 5px;
+}
+
+td[width="2"],
+td[width="5"] {
+    width: 0px;
+}
+
+
+/*------------------------------
+------------ TABLE -----------
+------------------------------*/
+
+table {
+    border-spacing: 0;
+    font-family: 'PT Sans' !important;
+}
+
+td.header {
+    background: #292838;
+    border-radius: 0;
+    border-bottom: 0 !important;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 10pt;
+    line-height: 25px;
+    text-align: none;
+    /* Pour annuler le text-align de base */
+}
+
+td.lista {
+    border-radius: 0;
+    background: transparent;
+    padding: 10px;
+    font-size: 9pt;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 12px !important;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+table[width="90%"]>tbody>tr>td {
+    border-bottom: 0 !important;
+}
+
+#bodyarea #col .b-content,
+#bodyarea #mcol .b-content {
+    border-top: 3px solid rgba(255, 255, 255, 0.25);
+    border-bottom: 3px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.08);
+    padding: 0;
+}
+
+
+/*------------------------------
+------------ HEADER -----------
+------------------------------*/
+
+#logo {
+    background: transparent;
+    height: 160px;
+    width: 100%;
+    margin-top: 0px;
+    background-image: url(https://cdn.rawgit.com/sanzc/70411e38268cc2985475c2eb231a5061/raw/b93cbe8d242fd25ad55acc911ba8bff1aa801778/city.svg);
+    background-size: 33%;
+    background-position: 0% 95%;
+}
+
+#bodyarea {
+    padding: 0 50px;
+}
+
+.tracker_logo {
+    margin-left: 35px;
+    display: block;
+    position: absolute;
+    top: 61px;
+    height: 144px;
+    background: url('http://image.noelshack.com/fichiers/2017/28/2/1499787360-logo.png') bottom left no-repeat;
+}
+
+img[src="images/don.png"] {
+    content: url('http://image.noelshack.com/fichiers/2017/28/2/1499800716-don.png');
+    margin-top: 27px;
+}
+
+#dropdown br {
+    display: none;
+}
+
+#dropdown .blocklist {
+    background: rgba(33, 24, 30, 1);
+    padding: 10px 0;
+}
+
+#dropdown .b-content {
+    background: rgba(33, 24, 30, 1);
+}
+
+#menu {
+    background-color: #281d25;
+    border: 0;
+    padding: 5px 0;
+}
+
+#menu a {
+    text-shadow: none;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+#menu .level1-li {
+    line-height: 35px;
+}
+
+#menu li:hover>a,
+#menu ul li:hover>a.fly {
+    color: #fff;
+    background-color: #a8cec3;
+    text-shadow: 1px 0px 0px rgba(0, 0, 0, 0.34);
+}
+
+#menu ul.level2 {
+    background-color: #312f42;
+    border: 3px solid #a8cec3;
+}
+
+#header {
+    position: relative;
+}
+
+#header .block {
+    width: 100%;
+}
+
+#header .b-content {
+    background-color: #252331;
+    background-image: none;
+    margin: 0;
+}
+
+#header .block-content-l,
+#header .block-content-r {
+    background-image: none;
+}
+
+#header .block-head,
+#header .block-foot {
+    display: none;
+}
+
+#header br {
+    display: none;
+}
+
+
+/*------------------------------
+------------ CENTRE -----------
+------------------------------*/
+
+#mcol {
+    padding: 0 10px;
+}
+
+#mcol>div.block {
+    margin-bottom: 25px;
+}
+
+#bodyarea #mcol tr td {
+    /* border-bottom: 3px solid #2e2c3e; */
+    padding: 10px;
+}
+
+#bodyarea #mcol .block-head-title {
+    font-weight: 300;
+    font-style: normal;
+    font-family: 'PT Sans', Verdana;
+    font-size: 10pt;
+    line-height: 50px;
+    height: 50px;
+    padding: 0 0 0 10px;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0px 0px 10px #fbff00;
+    letter-spacing: 1px;
+    border-color: rgba(0, 0, 0, 0);
+    border-radius: 5px 5px 0 0;
+    border-top: 5px solid #fdff87;
+    background: none;
+    -webkit-box-shadow: 0px 0px 5px 0px #fbff00;
+    -moz-box-shadow: 0px 0px 5px 0px #fbff00;
+    box-shadow: 0px -5px 5px -5px #fbff00;
+}
+
+
+/* Chat */
+
+#bodyarea #mcol #shoutheader tr td {
+    border-bottom: 0;
+}
+
+#bodyarea #mcol .b-content .block {
+    background: none;
+    background-color: transparent;
+    border-radius: 0;
+    font-size: 12pt;
+    color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+}
+
+
+/* Recherches fréquentes */
+
+.tag_cloud {
+    font-size: 14px !important;
+}
+
+
+/*------------------------------
+------------ SIDEBAR -----------
+------------------------------*/
+
+#col {
+    padding: 0 20px;
+}
+
+#col tr:hover {
+    background-color: rgba(0, 0, 0, 0.30);
+}
+
+#bodyarea #col .block-head-title {
+    font-weight: 300;
+    font-style: normal;
+    font-family: 'PT Sans', Verdana;
+    font-size: 10pt;
+    line-height: 50px;
+    height: 50px;
+    padding: 0 0 0 10px;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0px 0px 10px #a8cec3;
+    letter-spacing: 1px;
+    border-color: rgba(0, 0, 0, 0);
+    border-radius: 5px 5px 0 0;
+    border-top: 5px solid #a8cec3;
+    background: none;
+    -webkit-box-shadow: 0px 0px 5px 0px #00c5ff;
+    -moz-box-shadow: 0px 0px 5px 0px #00c5ff;
+    box-shadow: 0px -5px 5px -5px #92ffe0;
+}
+
+td[valign="top"] {
+    padding-top: 0;
+}
+
+#bodyarea #col .b-content .lista {
+    background: transparent;
+    color: rgba(255, 255, 255, 0.9);
+    padding: 5px;
+    line-height: 25px;
+}
+
+#bodyarea #col .b-content a:link,
+#bodyarea #col .b-content a:active,
+#bodyarea #col .b-content a:visited {
+    color: #a8cec3;
+}
+
+
+/* avatar */
+
+.poller img {
+    border-radius: 50%;
+    width: 120px;
+    height: auto;
+    border: 2px solid #dbdfe6;
+    padding: 3px;
+}
+
+
+/* Categories */
+
+#catnumber td.lista {
+    line-height: 25px;
+}
+
+#catnumber td[align="left"].lista {
+    padding-left: 5px !important;
+}
+
+#bodyarea #col .b-content .header {
+    background: none;
+    line-height: 25px;
+}
+
+#bodyarea #col .b-content .blocklist {
+    padding: 5px 0;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.9);
+    border-bottom: 0 !important;
+}
+
+
+/*------------------------------
+------------ SIDEBAR -----------
+------------------------------*/
+
+#footer {
+    background: none;
+    background-color: rgba(0, 0, 0, 0.25);
+    height: auto;
+    line-height: 25px;
+}
+
+#footer br {
+    display: none;
+}
+
+if td {
+    border-bottom: 0;
+}
+
+
+/*------------------------------
+------------ ONGLETS -----------
+------------------------------*/
+
+ul.tab {
+    background-color: rgba(0, 0, 0, 0.15);
+    border: 0;
+}
+
+.tabcontent {
+    border: 0;
+}
+
+ul.tab li a {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+ul.tab li a:hover {
+    background-color: transparent;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.9);
+}
+
+ul.tab li a:focus,
+.active {
+    border-bottom: 3px solid #fdff87;
+    color: #fdff87 !important;
+    background-color: transparent;
+}
+
+
+/*------------------------------
+------------ TABLEAU -----------
+------------------------------*/
+
+.rTableHeading {
+    background-color: transparent;
+}
+
+.rTableCell,
+.rTableHead {
+    display: table-cell;
+    padding: 10px;
+    vertical-align: middle;
+    border: 0;
+    border-top: 2px solid #6f6f6f;
+    border-left: 1px solid #6f6f6f;
+    border-right: 1px solid #6f6f6f;
+    border-bottom: 2px solid #6f6f6f;
+}
+
+
+/*------------------------------
+------------ FORUM -------------
+------------------------------*/
+
+td.blocklist {
+    background: rgb(41, 40, 56);
+    color: rgba(255, 255, 255, 0.9);
+    border-bottom: 3px solid #a8cec3;
+}
+
+td.post {
+    background: rgb(49, 47, 66);
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 14px;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.25);
+}
+
+.pager {
+    border: 0;
+}
+
+.pager a:link {
+    background: transparent;
+    border: 2px solid #a8cec3;
+    color: #a8cec3;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.pager a:link:hover {
+    background: #a8cec3;
+    border: 2px solid #a8cec3;
+    color: #312F42 !important;
+}
+
+
+/*------------------------------
+------------ ICONES -----------
+------------------------------*/
+
+
+/* Topic Vérouillé */
+
+img[src="http://downloadville.net/tracker/style/xbtit_default/images/locked.png"] {
+    content: url('http://image.noelshack.com/fichiers/2017/28/7/1500233324-verouille.png');
+    vertical-align: middle;
+}
+
+
+/* Topic Vérouillé Nouveau */
+
+img[src="http://downloadville.net/tracker/style/xbtit_default/images/lockednew.png"] {
+    content: url('http://image.noelshack.com/fichiers/2017/28/7/1500229925-verouille.png');
+    vertical-align: middle;
+}
+
+
+/* Topic */
+
+img[src="http://downloadville.net/tracker/style/xbtit_default/images/unlocked.png"] {
+    content: url('http://image.noelshack.com/fichiers/2017/28/7/1500233398-topic.png');
+    vertical-align: middle;
+}
+
+
+/* Topic Nouveau */
+
+img[src="http://downloadville.net/tracker/style/xbtit_default/images/unlockednew.png"] {
+    content: url('http://image.noelshack.com/fichiers/2017/28/7/1500232025-nouveau.png');
+    vertical-align: middle;
+}
